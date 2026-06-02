@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Time Zone Clock</title>
+    <link rel="stylesheet" href="timezone-clock.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🌍 Global Time Zone Clock</h1>
+            <p>Real-time display across the world</p>
+        </header>
+
+        <div class="controls">
+            <input 
+                type="text" 
+                id="searchInput" 
+                class="search-box" 
+                placeholder="Search time zone (e.g., New York, Tokyo, London)..."
+            >
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="popular">Popular</button>
+                <button class="filter-btn" data-filter="favorites">⭐ Favorites</button>
+            </div>
+        </div>
+
+        <div class="clocks-grid" id="clocksGrid">
+            <!-- Clocks will be generated here by JavaScript -->
+        </div>
+
+        <div class="info-section">
+            <h3>About Time Zones</h3>
+            <p>This clock displays the current time in major cities around the world. Click the ⭐ icon to add/remove from favorites.</p>
+        </div>
+    </div>
+
+    <script src="timezone-clock.js"></script>
+</body>
+</html>
