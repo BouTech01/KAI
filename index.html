@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAI - AI Chatbot Avatar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Avatar Section -->
+        <div class="avatar-container">
+            <canvas id="avatarCanvas" width="300" height="400"></canvas>
+            <div class="avatar-status" id="avatarStatus">Ready</div>
+        </div>
+
+        <!-- Chat Section -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1>KAI</h1>
+                <p>Your AI Avatar Assistant</p>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-content">Hello! I'm KAI, your AI assistant. How can I help you today?</div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    class="chat-input" 
+                    placeholder="Type your message..."
+                    autocomplete="off"
+                >
+                <button id="sendBtn" class="send-btn">Send</button>
+            </div>
+
+            <div class="info-text">
+                <small>Powered by OpenAI • KAI learns from your conversations</small>
+            </div>
+        </div>
+    </div>
+
+    <script src="avatar.js"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

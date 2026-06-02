@@ -1,0 +1,25 @@
+{
+  "name": "kai-chatbot-avatar",
+  "version": "1.0.0",
+  "description": "An interactive web-based chatbot with an animated 2D avatar powered by OpenAI",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "npx http-server"
+  },
+  "keywords": [
+    "chatbot",
+    "avatar",
+    "ai",
+    "openai",
+    "gpt",
+    "animation",
+    "conversational"
+  ],
+  "author": "BouTech01",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BouTech01/KAI.git"
+  }
+}
